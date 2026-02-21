@@ -7,7 +7,7 @@ public class DialogueStruct
     public string character;
     public string cgSprite;
     public string joanSpeakerSprite;
-    public string seleneSpeakerSprite;
+    public string serenaSpeakerSprite;
     public string dialogue;
     public float textSpeed;
     public bool hideUI;

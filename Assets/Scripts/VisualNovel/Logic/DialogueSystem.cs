@@ -21,7 +21,7 @@ public class DialogueSystem : MonoBehaviour
     [SerializeField] private Image oldCGImage;
     [SerializeField] private Image activeCGImage;
     [SerializeField] private Image joanSpeakerSpriteImage;
-    [SerializeField] private Image seleneSpeakerSpriteImage;
+    [SerializeField] private Image serenaSpeakerSpriteImage;
     [SerializeField] private TextMeshProUGUI nameTMP;
     [SerializeField] private TextMeshProUGUI dialogueTMP;
     [SerializeField] private TextMeshProUGUI narrationTMP;
@@ -56,7 +56,7 @@ public class DialogueSystem : MonoBehaviour
         oldCGImage = oldCG?.GetComponent<Image>();
         activeCGImage = activeCG?.GetComponent<Image>();
         joanSpeakerSpriteImage = transform.Find("JoanSpeakerSprite")?.GetComponent<Image>();
-        seleneSpeakerSpriteImage = transform.Find("SeleneSpeakerSprite")?.GetComponent<Image>();
+        serenaSpeakerSpriteImage = transform.Find("SerenaSpeakerSprite")?.GetComponent<Image>();
         nameTMP = transform.Find("Text/NameText").GetComponent<TextMeshProUGUI>();
         dialogueTMP = transform.Find("Text/DialogueText").GetComponent<TextMeshProUGUI>();
         narrationTMP = transform.parent.transform.Find("NarrationText").GetComponent<TextMeshProUGUI>();
@@ -102,7 +102,7 @@ public class DialogueSystem : MonoBehaviour
                 enabled = false;
 
                 joanSpeakerSpriteImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["Transparent"];
-                seleneSpeakerSpriteImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["Transparent"];
+                serenaSpeakerSpriteImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["Transparent"];
 
                 gameObject.SetActive(false);
             }
@@ -186,7 +186,7 @@ public class DialogueSystem : MonoBehaviour
     {
         dialogueBoxImage.enabled = true;
         joanSpeakerSpriteImage.enabled = true;
-        seleneSpeakerSpriteImage.enabled = true;
+        serenaSpeakerSpriteImage.enabled = true;
         nameTMP.enabled = true;
         dialogueTMP.enabled = true;
     }
@@ -195,7 +195,7 @@ public class DialogueSystem : MonoBehaviour
     {
         dialogueBoxImage.enabled = false;
         joanSpeakerSpriteImage.enabled = false;
-        seleneSpeakerSpriteImage.enabled = false;
+        serenaSpeakerSpriteImage.enabled = false;
         nameTMP.enabled = false;
         dialogueTMP.enabled = false;
     }
@@ -203,7 +203,7 @@ public class DialogueSystem : MonoBehaviour
     public void SetSprite()
     {
         if (currentDialogue.character.Equals("Joan")) joanSpeakerSpriteImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites[currentDialogue.joanSpeakerSprite];
-        else if (currentDialogue.character.Equals("Selene")) seleneSpeakerSpriteImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites[currentDialogue.seleneSpeakerSprite];
+        else if (currentDialogue.character.Equals("Serena")) serenaSpeakerSpriteImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites[currentDialogue.serenaSpeakerSprite];
     }
 
     public void SetDialogue() 

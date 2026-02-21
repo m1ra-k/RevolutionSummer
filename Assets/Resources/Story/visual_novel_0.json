@@ -1,0 +1,260 @@
+{
+    "dialogues": [
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "Transparent",
+            "dialogue": "(Two weeks before competition...)"
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanUpset",
+            "dialogue": "No. No, no, no. Let's start from the top again. Lea, your drum was a little offbeat during the chorus; Verna, you were a little slow on the intro; and Serena..."
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanUpset",
+            "dialogue": "I told you to stick to the script… remember? It's Sonatine, not Serena. This hasn't been the first time since you decided to pull a Serena."
+        },
+        {
+            "character": "Serena",
+            "serenaSpeakerSprite": "SerenaUpset",
+            "dialogue": "I've tried sticking to it... it's just... I feel like... you know I've been playing the bass since middle school, and... I feel like you don't recognize my potential or Sonatine's potential."
+        },
+        {
+            "character": "Serena",
+            "serenaSpeakerSprite": "SerenaUpset",
+            "dialogue": "I could do a lot more for Sonatine if you would just let me..."
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanUpset",
+            "dialogue": "That's why you're our main lyricist... What more do you want?"
+        },
+        {
+            "character": "Serena",
+            "serenaSpeakerSprite": "SerenaUpset",
+            "dialogue": "I don't know... Maybe my own little solo part on the bass, too? I don't want to just be in the background all the time... What's the point in writing the majority of the lyrics that you can't even perform half of?"
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanNeutral",
+            "dialogue": "So... Are you done?"
+        },
+        {
+            "character": "Serena",
+            "serenaSpeakerSprite": "SerenaUpset",
+            "dialogue": "... Is that all?"
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanUpset",
+            "dialogue": "What more do you want me to say?"
+        },
+        {
+            "character": "Serena",
+            "serenaSpeakerSprite": "SerenaUpset",
+            "dialogue": "..."
+        },
+        {
+            "character": "Serena",
+            "serenaSpeakerSprite": "SerenaNeutral",
+            "dialogue": "You know what... "
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanNeutral",
+            "dialogue": "?"
+        },
+        {
+            "character": "Serena",
+            "serenaSpeakerSprite": "SerenaNeutral",
+            "dialogue": "I can't do this anymore..."
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanUpset",
+            "dialogue": "Really? Trying to steal the show again, Serena? Quit it. We can think about this next time. I'm sure everyone else feels the same way as you, but you know Sonatine's only been able to make it this far because of me. Plus, competition is in two weeks. Lock in."
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanNeutral",
+            "dialogue": "Alright guys, let's rewind back to the start and try that again. I'll be listening closely Ver-"
+        },
+        {
+            "character": "Serena",
+            "serenaSpeakerSprite": "SerenaNeutral",
+            "dialogue": "I quit."
+        },
+        {
+            "character": "Serena",
+            "serenaSpeakerSprite": "Transparent",
+            "dialogue": "(Serena leaves.)"
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "Transparent",
+            "dialogue": "(One week later...)"
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanUpset",
+            "dialogue": "*What are we going to do now... Should we just drop? I can't believe she would pull that on us, and right before competition week!"
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "Transparent",
+            "dialogue": "(Joan calls Serena.)"
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanUpset",
+            "dialogue": "*And she's not picking up! Who does she think she is?"
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "Transparent",
+            "dialogue": "(Joan encounters a band poster with a familiar face.)"
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanNeutral",
+            "dialogue": "*..."
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanNeutral",
+            "dialogue": "*..."
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanUpset",
+            "dialogue": "*Wait... Is that..."
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanUpset",
+            "dialogue": "*That traitor. Of course she would pull this move... Typical Serena."
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanUpset",
+            "dialogue": "*Grand Mal."
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanUpset",
+            "dialogue": "*Sounds like something she would come up with, too."
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanUpset",
+            "dialogue": "*..."
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanUpset",
+            "dialogue": "*I would be lying if I were to say Sonatine still sounds the same without her."
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanUpset",
+            "dialogue": "*Did I mess up?"
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanUpset",
+            "dialogue": "*What have I done?"
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanUpset",
+            "dialogue": "..."
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanNeutral",
+            "dialogue": "*The competition..."
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanHappy",
+            "dialogue": "*Maybe, it's my last chance to win her back."
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "Transparent",
+            "dialogue": "(Joan calls band members.)"
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanHappy",
+            "dialogue": "Guys, when are you available to meet this week? Lets rock this competition."
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "Transparent",
+            "dialogue": "(Competition day...)"
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "Transparent",
+            "dialogue": "And for our finale... Coming in hot and new to the game is the Grand Mal and their lead singer and bassist, Serena!" 
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "Transparent",
+            "dialogue": "(Crowd cheers.)"
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "Transparent",
+            "dialogue": "Going against the Grand Mal with their hard bass and head-rocking lyrics- the infamous, Sonatine and its Joan!"
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "Transparent",
+            "dialogue": "(Crowd roars.)"
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "Transparent",
+            "dialogue": "So without further ado, let us begin!"
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanUpset",
+            "dialogue": "*Serena..."
+        },
+        {
+            "character": "Serena",
+            "serenaSpeakerSprite": "SerenaNeutral",
+            "dialogue": "..."
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanHappy",
+            "dialogue": "Serena!"
+        },
+        {
+            "character": "Serena",
+            "serenaSpeakerSprite": "SerenaNeutral",
+            "dialogue": "..."
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanHappy",
+            "dialogue": "Hey! Amazing performances."
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanNeutral",
+            "dialogue": "I just wanted you to know… I've been thinking about what I'd done that day, and it was incredibly selfish of me to not consider how you might've felt. You know I just want what's best for all of us. I just wanted to say that I'm s-"
+        },
+        {
+            "character": "Serena",
+            "serenaSpeakerSprite": "SerenaNeutral",
+            "dialogue": "Good luck.",
+            "endOfScene": true
+        }
+    ]
+}

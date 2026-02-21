@@ -6,7 +6,8 @@ public class DialogueStruct
 {
     public string character;
     public string cgSprite;
-    public string speakerSprite;
+    public string joanSpeakerSprite;
+    public string seleneSpeakerSprite;
     public string dialogue;
     public float textSpeed;
     public bool hideUI;

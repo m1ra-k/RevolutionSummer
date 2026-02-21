@@ -20,7 +20,8 @@ public class DialogueSystem : MonoBehaviour
     [SerializeField] private GameObject activeCG;
     [SerializeField] private Image oldCGImage;
     [SerializeField] private Image activeCGImage;
-    [SerializeField] private Image speakerSpriteImage;
+    [SerializeField] private Image joanSpeakerSpriteImage;
+    [SerializeField] private Image seleneSpeakerSpriteImage;
     [SerializeField] private TextMeshProUGUI nameTMP;
     [SerializeField] private TextMeshProUGUI dialogueTMP;
     [SerializeField] private TextMeshProUGUI narrationTMP;
@@ -54,7 +55,8 @@ public class DialogueSystem : MonoBehaviour
         activeCG = transform.Find("ActiveCG")?.gameObject;
         oldCGImage = oldCG?.GetComponent<Image>();
         activeCGImage = activeCG?.GetComponent<Image>();
-        speakerSpriteImage = transform.Find("SpeakerSprite")?.GetComponent<Image>();
+        joanSpeakerSpriteImage = transform.Find("JoanSpeakerSprite")?.GetComponent<Image>();
+        seleneSpeakerSpriteImage = transform.Find("SeleneSpeakerSprite")?.GetComponent<Image>();
         nameTMP = transform.Find("Text/NameText").GetComponent<TextMeshProUGUI>();
         dialogueTMP = transform.Find("Text/DialogueText").GetComponent<TextMeshProUGUI>();
         narrationTMP = transform.parent.transform.Find("NarrationText").GetComponent<TextMeshProUGUI>();
@@ -86,7 +88,7 @@ public class DialogueSystem : MonoBehaviour
 
     void Update()
     {
-        if ((Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown(KeyCode.Return) || advanceDialogueButtonPressed || automaticFadeComplete) && !typeWriterInEffect && automaticFadeCoroutine == null && !advanceDisabled)
+        if ((Input.GetKeyDown(KeyCode.Space) || advanceDialogueButtonPressed || automaticFadeComplete) && !typeWriterInEffect && automaticFadeCoroutine == null && !advanceDisabled)
         {
             advanceDialogueButtonPressed = false;
 
@@ -99,7 +101,9 @@ public class DialogueSystem : MonoBehaviour
                 dialogueIndex = -1;
                 enabled = false;
 
-                speakerSpriteImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["Transparent"];
+                joanSpeakerSpriteImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["Transparent"];
+                seleneSpeakerSpriteImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["Transparent"];
+
                 gameObject.SetActive(false);
             }
             else if (!currentDialogue.endOfScene && !typeWriterInEffect && !finishedDialogue)
@@ -146,12 +150,8 @@ public class DialogueSystem : MonoBehaviour
         {
             ShowUI();
 
-            // TODO: do some sort of one other the other thing here
-            // set cg
-            if (!SceneManager.GetActiveScene().name.Contains("EscapeRoom")) SetCG();
-
             // set sprite
-            if (!SceneManager.GetActiveScene().name.Equals("Cutscene")) SetSprite();
+            SetSprite();
 
             // set dialogue
             SetDialogue();
@@ -184,45 +184,26 @@ public class DialogueSystem : MonoBehaviour
 
     public void ShowUI()
     {
-        if (!SceneManager.GetActiveScene().name.Equals("Cutscene"))
-        {
-            dialogueBoxImage.enabled = true;
-            speakerSpriteImage.enabled = true;
-        }
+        dialogueBoxImage.enabled = true;
+        joanSpeakerSpriteImage.enabled = true;
+        seleneSpeakerSpriteImage.enabled = true;
         nameTMP.enabled = true;
         dialogueTMP.enabled = true;
     }
 
     public void HideUI()
     {
-        if (!SceneManager.GetActiveScene().name.Equals("Cutscene"))
-        {
-            dialogueBoxImage.enabled = false;
-            speakerSpriteImage.enabled = false;
-        }
+        dialogueBoxImage.enabled = false;
+        joanSpeakerSpriteImage.enabled = false;
+        seleneSpeakerSpriteImage.enabled = false;
         nameTMP.enabled = false;
         dialogueTMP.enabled = false;
-    }
-
-        public void SetCG()
-    {
-        if (currentDialogue.cgSprite != null)
-        {
-            Sprite oldCGSprite = oldCGImage.sprite;
-            Sprite newCGSprite =  GameProgression.GameProgressionInstance.SpriteCache.sprites[currentDialogue.cgSprite];
-
-            if (!oldCGSprite.ToString().Equals(newCGSprite.ToString())) 
-            {
-                oldCGImage.sprite = activeCGImage.sprite;
-                GameProgression.GameProgressionInstance.FadeEffect.FadeInCGSprite(activeCG, newCGSprite);
-                GameProgression.GameProgressionInstance.FadeEffect.FadeOutCGSprite(oldCG, oldCGSprite);
-            }
-        } 
     }
     
     public void SetSprite()
     {
-        speakerSpriteImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites[currentDialogue.speakerSprite];
+        if (currentDialogue.character.Equals("Joan")) joanSpeakerSprite.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites[currentDialogue.joanSpeakerSprite];
+        else if (currentDialogue.character.Equals("Selene")) seleneSpeakerSprite.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites[currentDialogue.seleneSpeakerSprite];
     }
 
     public void SetDialogue() 

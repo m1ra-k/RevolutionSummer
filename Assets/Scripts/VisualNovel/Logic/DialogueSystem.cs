@@ -202,8 +202,8 @@ public class DialogueSystem : MonoBehaviour
     
     public void SetSprite()
     {
-        if (currentDialogue.character.Equals("Joan")) joanSpeakerSprite.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites[currentDialogue.joanSpeakerSprite];
-        else if (currentDialogue.character.Equals("Selene")) seleneSpeakerSprite.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites[currentDialogue.seleneSpeakerSprite];
+        if (currentDialogue.character.Equals("Joan")) joanSpeakerSpriteImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites[currentDialogue.joanSpeakerSprite];
+        else if (currentDialogue.character.Equals("Selene")) seleneSpeakerSpriteImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites[currentDialogue.seleneSpeakerSprite];
     }
 
     public void SetDialogue() 

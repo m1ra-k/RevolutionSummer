@@ -1194,7 +1194,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1746873071}
+        m_TargetAssemblyTypeName: GameProgression, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1746873071}
         m_TargetAssemblyTypeName: GameProgression, Assembly-CSharp
         m_MethodName: SceneTransition
         m_Mode: 5
@@ -1406,6 +1418,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 1256dfae84423e846ae1398053dd79b6, type: 3}
   - {fileID: 8300000, guid: 0565c75f226035a4e86cb27dbe6485ae, type: 3}
   - {fileID: 8300000, guid: 328a5bb6887968544993992a303026e4, type: 3}
+  - {fileID: 8300000, guid: 832ae342c7643a142bb75c39c81cc58c, type: 3}
 --- !u!4 &1746873072
 Transform:
   m_ObjectHideFlags: 0
@@ -1504,6 +1517,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1746873071}
+        m_TargetAssemblyTypeName: GameProgression, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 485727108}
         m_TargetAssemblyTypeName: StartScreenGameplay, Assembly-CSharp
         m_MethodName: ExitGame
@@ -1635,7 +1660,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2052518235}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1746873071}
+        m_TargetAssemblyTypeName: GameProgression, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2052518235
 MonoBehaviour:
   m_ObjectHideFlags: 0

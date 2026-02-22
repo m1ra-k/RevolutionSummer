@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Networking;
 using Melanchall.DryWetMidi.Core;
 using Melanchall.DryWetMidi.Interaction;
 using System.IO;
@@ -51,14 +52,32 @@ public class ConcertGameplay : MonoBehaviour
         endSceneText = GameObject.Find("Canvas").transform.Find("EndSceneText").GetComponent<TextMeshProUGUI>();
     }
 
-    void Start()
+    IEnumerator Start()
     {
-        string filePath = Path.Combine(Application.streamingAssetsPath, $"Sequence{GameData.concertNumber}.mid");
+        string fileName = $"Sequence{GameData.concertNumber}.mid";
+        string filePath = Path.Combine(Application.streamingAssetsPath, fileName);
 
-        var midiFile = MidiFile.Read(filePath);
-                
-        notes = midiFile.GetNotes();
-        // Debug.Log($"found {notes.Count} notes.");
+        MidiFile midiFile = null;
+
+        #if UNITY_WEBGL && !UNITY_EDITOR
+            using (UnityWebRequest www = UnityWebRequest.Get(filePath))
+            {
+                yield return www.SendWebRequest();
+
+                if (www.result == UnityWebRequest.Result.Success)
+                {
+                    using (var stream = new MemoryStream(www.downloadHandler.data))
+                    {
+                        midiFile = MidiFile.Read(stream);
+                        notes = midiFile.GetNotes();
+                    }
+                }
+            }
+        #else
+            midiFile = MidiFile.Read(filePath);
+            notes = midiFile.GetNotes();
+            yield return null; 
+        #endif
 
         // StringBuilder sb = new StringBuilder();
 

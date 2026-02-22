@@ -5,7 +5,7 @@ using System;
 public class DialogueStruct
 {
     public string character;
-    public string cgSprite;
+    public string bgSprite;
     public string joanSpeakerSprite;
     public string serenaSpeakerSprite;
     public string dialogue;

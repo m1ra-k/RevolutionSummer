@@ -33,7 +33,12 @@
         {
             "character": "Serena",
             "serenaSpeakerSprite": "SerenaUpset",
-            "dialogue": "I don't know... Maybe my own little solo part on the bass, too? I don't want to just be in the background all the time... What's the point in writing the majority of the lyrics that you can't even perform half of?"
+            "dialogue": "I don't know... Maybe my own little solo part on the bass, too?"
+        },
+        {
+            "character": "Serena",
+            "serenaSpeakerSprite": "SerenaUpset",
+            "dialogue": "What's the point in writing the majority of the lyrics that you can't even perform half of?"
         },
         {
             "character": "Joan",
@@ -73,7 +78,12 @@
         {
             "character": "Joan",
             "joanSpeakerSprite": "JoanUpset",
-            "dialogue": "Really? Trying to steal the show again, Serena? Quit it. We can think about this next time. I'm sure everyone else feels the same way as you, but you know Sonatine's only been able to make it this far because of me. Plus, competition is in two weeks. Lock in."
+            "dialogue": "Really? Trying to steal the show again, Serena? Quit it. We can think about this next time."
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanUpset",
+            "dialogue": "I'm sure everyone else feels the same way as you, but you know Sonatine's only been able to make it this far because of me. Plus, competition is in two weeks. Get it together."
         },
         {
             "character": "Joan",
@@ -197,6 +207,7 @@
         },
         {
             "character": "",
+            "bgSprite": "ConcertVenue",
             "joanSpeakerSprite": "Transparent",
             "dialogue": "And for our finale... Coming in hot and new to the game is the Grand Mal and their lead singer and bassist, Serena!" 
         },
@@ -248,7 +259,12 @@
         {
             "character": "Joan",
             "joanSpeakerSprite": "JoanNeutral",
-            "dialogue": "I just wanted you to know… I've been thinking about what I'd done that day, and it was incredibly selfish of me to not consider how you might've felt. You know I just want what's best for all of us. I just wanted to say that I'm s-"
+            "dialogue": "I just wanted you to know... I've been thinking about what I'd done that day, and it was incredibly selfish of me to not consider how you might've felt."
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanNeutral",
+            "dialogue": "You know I just want what's best for all of us. I just wanted to say that I'm s-"
         },
         {
             "character": "Serena",

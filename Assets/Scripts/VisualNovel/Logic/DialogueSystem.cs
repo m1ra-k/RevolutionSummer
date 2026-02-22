@@ -16,10 +16,8 @@ public class DialogueSystem : MonoBehaviour
 
     [Header("[UI]")]
     [SerializeField] private Image dialogueBoxImage;
-    [SerializeField] private GameObject oldCG;
-    [SerializeField] private GameObject activeCG;
-    [SerializeField] private Image oldCGImage;
-    [SerializeField] private Image activeCGImage;
+    [SerializeField] private GameObject bgSprite;
+    [SerializeField] private Image bgSpriteImage;
     [SerializeField] private Image joanSpeakerSpriteImage;
     [SerializeField] private Image serenaSpeakerSpriteImage;
     [SerializeField] private TextMeshProUGUI nameTMP;
@@ -53,10 +51,8 @@ public class DialogueSystem : MonoBehaviour
 
         // UI
         dialogueBoxImage = transform.Find("DialogueBox").GetComponent<Image>();
-        oldCG = transform.Find("OldCG")?.gameObject;
-        activeCG = transform.Find("ActiveCG")?.gameObject;
-        oldCGImage = oldCG?.GetComponent<Image>();
-        activeCGImage = activeCG?.GetComponent<Image>();
+        bgSprite = transform.Find("BgSprite")?.gameObject;
+        bgSpriteImage = bgSprite?.GetComponent<Image>();
         joanSpeakerSpriteImage = transform.Find("JoanSpeakerSprite")?.GetComponent<Image>();
         serenaSpeakerSpriteImage = transform.Find("SerenaSpeakerSprite")?.GetComponent<Image>();
         nameTMP = transform.Find("Text/NameText").GetComponent<TextMeshProUGUI>();
@@ -72,15 +68,6 @@ public class DialogueSystem : MonoBehaviour
 
     void OnEnable() 
     {
-        if (SceneManager.GetActiveScene().name.Equals("Cutscene"))
-        {    
-            dialogueBoxImage.gameObject.SetActive(false);
-        }
-        else
-        {
-            oldCG?.gameObject.SetActive(false);
-            activeCG?.gameObject.SetActive(false);
-        }
         narrationTMP.gameObject.SetActive(false);
         advanceDialogueButton.SetActive(true);
 
@@ -157,6 +144,9 @@ public class DialogueSystem : MonoBehaviour
             // set sprite
             SetSprite();
 
+            // set sprite
+            SetBgSprite();
+
             // set dialogue
             SetDialogue();
         }
@@ -199,6 +189,14 @@ public class DialogueSystem : MonoBehaviour
         nameTMP.enabled = false;
         dialogueTMP.enabled = false;
     }
+
+    public void SetBgSprite()
+    {
+        if (currentDialogue.bgSprite != null) 
+        {
+            bgSpriteImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites[currentDialogue.bgSprite];
+        }
+    }
     
     public void SetSprite()
     {
@@ -226,7 +224,10 @@ public class DialogueSystem : MonoBehaviour
     void SkipTypeWriterEffect() 
     {
         StopCoroutine(typewriterCoroutine);
-        dialogueTMP.text = dialogueOnDisplay;
+
+        bool isItalic = currentDialogue.dialogue.StartsWith("*");
+
+        dialogueTMP.text = isItalic ? $"<i>{currentDialogue.dialogue.Substring(1)}</i>" : currentDialogue.dialogue;
         typeWriterInEffect = false;
     }
 

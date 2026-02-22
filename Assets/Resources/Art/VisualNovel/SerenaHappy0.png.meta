@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: a9d4bac97466984419f5906a914f85e8
+guid: e8b92233184bea64c8bf5e68c9632793
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -620028773324309920
-    second: JoanHappy_0
+      213: 8636145443281181805
+    second: SerenaHappy0_0
+  - first:
+      213: -2276601684707384696
+    second: SerenaHappy0_1
+  - first:
+      213: -9095819825204803827
+    second: SerenaHappy0_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: JoanHappy_0
+      name: SerenaHappy0_0
       rect:
         serializedVersion: 2
-        x: 43
+        x: 1047
         y: 0
-        width: 843
-        height: 851
+        width: 503
+        height: 967
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +134,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 06abb7f9d173567f0800000000000000
-      internalID: -620028773324309920
+      spriteID: d6c126f3680c9d770800000000000000
+      internalID: 8636145443281181805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SerenaHappy0_1
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 131
+        width: 6
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 882e5f764d2e760e0800000000000000
+      internalID: -2276601684707384696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SerenaHappy0_2
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 118
+        width: 6
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0746b98f0825c180800000000000000
+      internalID: -9095819825204803827
       vertices: []
       indices: 
       edges: []
@@ -148,7 +198,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      JoanHappy_0: -620028773324309920
+      SerenaHappy0_0: 8636145443281181805
+      SerenaHappy0_1: -2276601684707384696
+      SerenaHappy0_2: -9095819825204803827
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

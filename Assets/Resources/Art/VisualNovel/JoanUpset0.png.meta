@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a9d4bac97466984419f5906a914f85e8
+guid: 84ad8af1a0c7ef8448706367348a2d47
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -620028773324309920
-    second: JoanHappy_0
+      213: -682034313516115650
+    second: JoanUpset0_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: JoanHappy_0
+      name: JoanUpset0_0
       rect:
         serializedVersion: 2
         x: 43
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 06abb7f9d173567f0800000000000000
-      internalID: -620028773324309920
+      spriteID: e399e3ac76de886f0800000000000000
+      internalID: -682034313516115650
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      JoanHappy_0: -620028773324309920
+      JoanUpset0_0: -682034313516115650
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

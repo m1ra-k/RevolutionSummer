@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: a9d4bac97466984419f5906a914f85e8
+guid: ceba74b6de02fef468deb474b1e05f54
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -620028773324309920
-    second: JoanHappy_0
+      213: 7177245304507358158
+    second: SerenaUpset0_0
+  - first:
+      213: -2091463971690434598
+    second: SerenaUpset0_1
+  - first:
+      213: -2042730973968829901
+    second: SerenaUpset0_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +119,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: JoanHappy_0
+      name: SerenaUpset0_0
       rect:
         serializedVersion: 2
-        x: 43
+        x: 1047
         y: 0
-        width: 843
-        height: 851
+        width: 503
+        height: 967
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +134,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 06abb7f9d173567f0800000000000000
-      internalID: -620028773324309920
+      spriteID: ecb5009e392ba9360800000000000000
+      internalID: 7177245304507358158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SerenaUpset0_1
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 131
+        width: 6
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adf2dda4990a9f2e0800000000000000
+      internalID: -2091463971690434598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SerenaUpset0_2
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 118
+        width: 6
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33276e48003c6a3e0800000000000000
+      internalID: -2042730973968829901
       vertices: []
       indices: 
       edges: []
@@ -148,7 +198,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      JoanHappy_0: -620028773324309920
+      SerenaUpset0_0: 7177245304507358158
+      SerenaUpset0_1: -2091463971690434598
+      SerenaUpset0_2: -2042730973968829901
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

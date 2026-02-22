@@ -753,6 +753,7 @@ MonoBehaviour:
   audioClipsSFX:
   - {fileID: 8300000, guid: 1256dfae84423e846ae1398053dd79b6, type: 3}
   - {fileID: 8300000, guid: 0565c75f226035a4e86cb27dbe6485ae, type: 3}
+  - {fileID: 8300000, guid: 328a5bb6887968544993992a303026e4, type: 3}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -1010,7 +1011,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1766358929
 RectTransform:
   m_ObjectHideFlags: 0

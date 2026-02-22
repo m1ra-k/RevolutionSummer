@@ -23,6 +23,11 @@ public class NoteBehavior : MonoBehaviour
 
     public int overrideSpawnPosition = -1;
 
+    void Awake()
+    {
+        GameProgression.GameProgressionInstance.PlaySFX(2);
+    }
+
     void Start()
     {
         rect = GetComponent<RectTransform>();

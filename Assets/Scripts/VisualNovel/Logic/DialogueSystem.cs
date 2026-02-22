@@ -291,7 +291,7 @@ public class DialogueSystem : MonoBehaviour
 
         bool isItalic = dialogue.StartsWith("*");
 
-        string cleanDialogue = isItalic ? dialogue[1..] : dialogue;
+        string cleanDialogue = isItalic ? dialogue.Substring(1) : dialogue;
 
         for (int i = 0; i <= cleanDialogue.Length; i++)
         {

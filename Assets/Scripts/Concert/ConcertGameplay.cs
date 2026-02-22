@@ -23,6 +23,12 @@ public class ConcertGameplay : MonoBehaviour
         { "doubleDiagonalFromLeft", new int[] { 1, 1, 3, 3 } },
         { "upDown", new int[] { 1, 2, 0, 3 } },
         { "downUp", new int[] { 2, 1, 3, 0 } },
+        { "s1p0", new int[] { 0, 1, 2, 3 } },
+        { "s1p1", new int[] { 0, 2, 1, 3 } },
+        { "s1p2", new int[] { 1, 0, 3, 2 } },
+        { "s1p3", new int[] { 1, 1, 0, 0 } },
+        { "s1p4", new int[] { 0, 1, 2 } },
+        { "s1p5", new int[] { 0, 1, 2, 2, 3 } }
     };
     private int attackPatternsIndex;
 
@@ -121,6 +127,51 @@ public class ConcertGameplay : MonoBehaviour
                 }
                 break;
             case 1:
+                yield return new WaitForSeconds(1.72f);
+
+                foreach (float hitTime in noteTimings)
+                {
+                    while (cumulativeTime < hitTime)
+                    {
+                        cumulativeTime += Time.deltaTime;
+                        yield return null; 
+                    }
+
+                    GameObject note = Instantiate(notePrefab, canvasTransform);
+
+                    NoteBehavior noteBehavior = note.GetComponent<NoteBehavior>();
+
+                    // phase 1
+                    if (cumulativeTime <= 14)
+                    {
+                        DetermineAttackPatternSpawnLocation("s1p0", noteBehavior);
+                    }
+                    // phase 2 and 4
+                    else if ((cumulativeTime > 14 && cumulativeTime <= 24) || (cumulativeTime > 31 && cumulativeTime <= 82))
+                    {
+                        DetermineAttackPatternSpawnLocation("s1p1", noteBehavior);
+                    }
+                    // phase 3, 4, and 7
+                    else if ((cumulativeTime > 24 && cumulativeTime <= 31) || (cumulativeTime > 82 && cumulativeTime <= 89) || (cumulativeTime > 113 && cumulativeTime <= 116))
+                    {
+                        DetermineAttackPatternSpawnLocation("s1p2", noteBehavior);
+                    }
+                    // phase 6 and 8
+                    else if ((cumulativeTime > 89 && cumulativeTime <= 113) || (cumulativeTime > 116 && cumulativeTime <= 127))
+                    {
+                        DetermineAttackPatternSpawnLocation("s1p3", noteBehavior);
+                    }
+                    // phase 9
+                    else if (cumulativeTime > 127 && cumulativeTime <= 130)
+                    {
+                        DetermineAttackPatternSpawnLocation("s1p4", noteBehavior);
+                    }
+                    // phase 10
+                    else if (cumulativeTime > 130)
+                    {
+                        DetermineAttackPatternSpawnLocation("s1p5", noteBehavior);
+                    }
+                }
                 break;
             case 2:
                 break;

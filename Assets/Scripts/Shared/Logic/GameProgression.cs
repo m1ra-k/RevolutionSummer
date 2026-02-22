@@ -105,6 +105,10 @@ public class GameProgression : MonoBehaviour
         }
 
         yield return new WaitForSeconds(0.25f);
+
+        blackTransition = GameObject.Find("Canvas").transform.Find("BlackTransition").gameObject;
+        float fadeSpeed = 0.5f;
+        FadeEffect.FadeOut(blackTransition, fadeSpeed, transitioning: true);
     }
 
     public void SceneTransition(string scene)

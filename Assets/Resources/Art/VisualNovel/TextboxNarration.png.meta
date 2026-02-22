@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9a203652f1f1a364082a454e75c68935
+guid: f53926551ca0e2844b0834ce9c8fc6d6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6663181299408003337
-    second: Textbox_0
+      213: -4638058569399471647
+    second: TextboxNarration_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Textbox_0
+      name: TextboxNarration_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 600
-        height: 200
+        x: 35
+        y: 27
+        width: 1121
+        height: 322
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7fe92c649ef9783a0800000000000000
-      internalID: -6663181299408003337
+      spriteID: 1e1fc7bfd4e42afb0800000000000000
+      internalID: -4638058569399471647
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Textbox_0: -6663181299408003337
+      TextboxNarration_0: -4638058569399471647
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -189,8 +189,6 @@ public class DialogueSystem : MonoBehaviour
     public void ShowUI()
     {
         dialogueBoxImage.enabled = true;
-        joanSpeakerSpriteImage.enabled = true;
-        serenaSpeakerSpriteImage.enabled = true;
         nameTMP.enabled = true;
         dialogueTMP.enabled = true;
     }
@@ -198,20 +196,17 @@ public class DialogueSystem : MonoBehaviour
     public void HideUI()
     {
         dialogueBoxImage.enabled = false;
-        joanSpeakerSpriteImage.enabled = false;
-        serenaSpeakerSpriteImage.enabled = false;
         nameTMP.enabled = false;
         dialogueTMP.enabled = false;
     }
     
     public void SetSprite()
     {
-        if (currentDialogue.character.Equals("Joan")) 
+        if (currentDialogue.joanSpeakerSprite != null) 
         {
-            print($"{currentDialogue.joanSpeakerSprite}");
             joanSpeakerSpriteImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites[currentDialogue.joanSpeakerSprite];
         }
-        else if (currentDialogue.character.Equals("Serena")) 
+        else if (currentDialogue.serenaSpeakerSprite != null) 
         {
             serenaSpeakerSpriteImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites[currentDialogue.serenaSpeakerSprite];
         }
@@ -283,15 +278,14 @@ public class DialogueSystem : MonoBehaviour
             
         switch (character)
         {
-            case "Virgo":
-                voiceAudioSource.pitch = 1.4f;
+            case "Joan":
+                voiceAudioSource.pitch = 1.35f;
                 break;
-            case "4574":
-            case "ASTA":
-                voiceAudioSource.pitch = 1.15f;
+            case "Serena":
+                voiceAudioSource.pitch = 1.2f;
                 break;
             default:
-                voiceAudioSource.pitch = 1.1f;
+                voiceAudioSource.pitch = 0.9f;
                 break;
         }
 
@@ -371,11 +365,7 @@ public class DialogueSystem : MonoBehaviour
         bool cg = false;
 
         // TODO: change this for what the cgs are called
-        if (fadeType[1].Equals("HandHold") || fadeType[1].Equals("Hug"))
-        {
-            cg = true;
-        }
-        else if (!string.IsNullOrEmpty(fadeType[1]))
+        if (!string.IsNullOrEmpty(fadeType[1]))
         {
             GameProgression.GameProgressionInstance.blackTransitionRectTransform.sizeDelta = new Vector2(GameProgression.GameProgressionInstance.blackTransitionRectTransform.sizeDelta.x, 120);
         }   
@@ -392,7 +382,11 @@ public class DialogueSystem : MonoBehaviour
     
     private void SetFlag()
     {
-        if (!string.IsNullOrEmpty(currentDialogue.flag)) GameProgression.GameProgressionInstance.SceneTransition(currentDialogue.flag);
+        if (!string.IsNullOrEmpty(currentDialogue.flag)) 
+        {
+            print("hejfoiwaejofajewfaijewfiaewf should transition");
+            GameProgression.GameProgressionInstance.SceneTransition(currentDialogue.flag);
+        }
     }
 
     private IEnumerator DisableAdvance()

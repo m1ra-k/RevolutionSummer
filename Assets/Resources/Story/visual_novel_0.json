@@ -1,7 +1,7 @@
 {
     "dialogues": [
         {
-            "character": "Joan",
+            "character": "",
             "joanSpeakerSprite": "Transparent",
             "dialogue": "(Two weeks before competition...)"
         },
@@ -86,12 +86,12 @@
             "dialogue": "I quit."
         },
         {
-            "character": "Serena",
+            "character": "",
             "serenaSpeakerSprite": "Transparent",
-            "dialogue": "(Serena leaves.)"
+            "dialogue": "(Serena grabs and swings her bass over her shoulder and rushes to slam the door behind her, leaving Joan and Sonatine shocked.)"
         },
         {
-            "character": "Joan",
+            "character": "",
             "joanSpeakerSprite": "Transparent",
             "dialogue": "(One week later...)"
         },
@@ -101,9 +101,9 @@
             "dialogue": "*What are we going to do now... Should we just drop? I can't believe she would pull that on us, and right before competition week!"
         },
         {
-            "character": "Joan",
+            "character": "",
             "joanSpeakerSprite": "Transparent",
-            "dialogue": "(Joan calls Serena.)"
+            "dialogue": "(Joan whips out her keitai and calls Serena for the twenthieth time as she stumbles down an alley.)"
         },
         {
             "character": "Joan",
@@ -111,7 +111,7 @@
             "dialogue": "*And she's not picking up! Who does she think she is?"
         },
         {
-            "character": "Joan",
+            "character": "",
             "joanSpeakerSprite": "Transparent",
             "dialogue": "(Joan encounters a band poster with a familiar face.)"
         },
@@ -181,42 +181,42 @@
             "dialogue": "*Maybe, it's my last chance to win her back."
         },
         {
-            "character": "Joan",
+            "character": "",
             "joanSpeakerSprite": "Transparent",
-            "dialogue": "(Joan calls band members.)"
+            "dialogue": "(Joan desperately scrambles to call the rest of the band members.)"
         },
         {
             "character": "Joan",
             "joanSpeakerSprite": "JoanHappy",
-            "dialogue": "Guys, when are you available to meet this week? Lets rock this competition."
+            "dialogue": "Guys, when are you available to meet this week? Let's rock this competition."
         },
         {
-            "character": "Joan",
+            "character": "",
             "joanSpeakerSprite": "Transparent",
             "dialogue": "(Competition day...)"
         },
         {
-            "character": "Joan",
+            "character": "",
             "joanSpeakerSprite": "Transparent",
             "dialogue": "And for our finale... Coming in hot and new to the game is the Grand Mal and their lead singer and bassist, Serena!" 
         },
         {
-            "character": "Joan",
+            "character": "",
             "joanSpeakerSprite": "Transparent",
             "dialogue": "(Crowd cheers.)"
         },
         {
-            "character": "Joan",
+            "character": "",
             "joanSpeakerSprite": "Transparent",
             "dialogue": "Going against the Grand Mal with their hard bass and head-rocking lyrics- the infamous, Sonatine and its Joan!"
         },
         {
-            "character": "Joan",
+            "character": "",
             "joanSpeakerSprite": "Transparent",
             "dialogue": "(Crowd roars.)"
         },
         {
-            "character": "Joan",
+            "character": "",
             "joanSpeakerSprite": "Transparent",
             "dialogue": "So without further ado, let us begin!"
         },
@@ -226,9 +226,9 @@
             "dialogue": "*Serena..."
         },
         {
-            "character": "Serena",
-            "serenaSpeakerSprite": "SerenaNeutral",
-            "dialogue": "..."
+            "character": "",
+            "serenaSpeakerSprite": "Transparent",
+            "dialogue": "(Serena stares in annoyance towards Joan's direction.)"
         },
         {
             "character": "Joan",
@@ -252,9 +252,12 @@
         },
         {
             "character": "Serena",
-            "serenaSpeakerSprite": "SerenaNeutral",
-            "dialogue": "Good luck.",
-            "endOfScene": true
+            "serenaSpeakerSprite": "SerenaUpset",
+            "dialogue": "Really? Trying to steal the show again, Joan? Good luck, I guess."
+        },
+        {
+            "hideUI": true,
+            "flag": "Concert"
         }
     ]
 }

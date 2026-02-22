@@ -82,7 +82,7 @@ public class NoteBehavior : MonoBehaviour
     private void OnNoteHitTarget()
     {
         GameProgression.GameProgressionInstance.PlaySFX(1);
-        GameData.concertGameplay.healthPoints -= 5;
+        GameData.concertGameplay.healthPoints -= 10;
         Destroy(gameObject);
     }
 

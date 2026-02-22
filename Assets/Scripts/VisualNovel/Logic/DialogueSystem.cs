@@ -49,6 +49,8 @@ public class DialogueSystem : MonoBehaviour
 
     void Awake()
     {
+        GameProgression.GameProgressionInstance.DialogueSystemScript = this;
+
         // UI
         dialogueBoxImage = transform.Find("DialogueBox").GetComponent<Image>();
         oldCG = transform.Find("OldCG")?.gameObject;

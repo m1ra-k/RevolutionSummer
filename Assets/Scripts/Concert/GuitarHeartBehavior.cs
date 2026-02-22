@@ -48,7 +48,7 @@ public class GuitarHeartBehavior : MonoBehaviour
                 if (GameData.concertGameplay.healthPoints < 350 && distance > 105f && distance < 180f)
                 {
                     GameProgression.GameProgressionInstance.PlaySFX(0);
-                    GameData.concertGameplay.healthPoints += 10;
+                    GameData.concertGameplay.healthPoints += 5;
                 }
                 else 
                 {

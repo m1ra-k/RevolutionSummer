@@ -114,6 +114,15 @@ public class GameProgression : MonoBehaviour
         FadeEffect.FadeIn(blackTransition, fadeTime: 2f, scene: scene);
     }
 
+    // Dialogue
+    public void ShowDialogue(TextAsset dialogue)
+    {
+        print($"hi {dialogue} hi");
+        DialogueSystemScript.SetVisualNovelJSONFile(dialogue);
+        DialogueSystemScript.enabled = true;
+        DialogueSystemScript.gameObject.SetActive(true);
+    }
+
     // BGM
     public IEnumerator PlayBGM(int index, float waitTime = 0.75f, GameObject gameObjectToDeactivate = null, float gameWaitTime = 0f, float fadeSpeed = 0.25f)
     {

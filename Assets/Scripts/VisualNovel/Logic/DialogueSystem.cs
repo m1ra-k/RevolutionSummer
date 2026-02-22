@@ -390,7 +390,6 @@ public class DialogueSystem : MonoBehaviour
     {
         if (!string.IsNullOrEmpty(currentDialogue.flag)) 
         {
-            print("hejfoiwaejofajewfaijewfiaewf should transition");
             GameProgression.GameProgressionInstance.SceneTransition(currentDialogue.flag);
         }
     }

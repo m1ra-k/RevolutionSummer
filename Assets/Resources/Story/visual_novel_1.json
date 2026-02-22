@@ -3,17 +3,17 @@
         {
             "character": "",
             "joanSpeakerSprite": "Transparent",
-            "dialogue": "Awwwww... And Sonatine takes the win per usual! Guess Grand Mal still has a few things to learn, yea?"
+            "dialogue": "Awwwww... And Sonatine takes the win per usual! Guess Grand Mal still has a few things to learn, yeah?"
         },
         {
             "character": "Serena",
             "serenaSpeakerSprite": "SerenaNeutral",
-            "dialogue": "The first win is on us. We've only just gotten started. It won't be so easy the second time around."
+            "dialogue": "The first win is on us. We've only just gotten started. It won't be so easy the next time around."
         },
         {
             "character": "Joan",
             "joanSpeakerSprite": "JoanUpset",
-            "dialogue": "On us? Seriously? There's a reason why I'm the main bassist and singer, and you're just a..."
+            "dialogue": "'On us'? Seriously? There's a reason why I'm the main bassist and singer, and you're just a--"
         },
         {
             "character": "Serena",
@@ -23,7 +23,7 @@
         {
             "character": "Joan",
             "serenaSpeakerSprite": "JoanUpset",
-            "dialogue": "Ah... Wait- I didn't mean it."
+            "dialogue": "Ah... Wait, I didn't mean it like that..."
         },
         {
             "character": "Joan",
@@ -48,17 +48,22 @@
         {
             "character": "Joan",
             "joanSpeakerSprite": "JoanUpset",
-            "dialogue": "You know how badly I wanted that recognition for us, for Sonatine. How badly, I wanted us to be something..."
+            "dialogue": "You know how badly I wanted that recognition for us, for Sonatine."
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanUpset",
+            "dialogue": "How badly, I wanted us to be something..."
         },
         {
             "character": "Serena",
             "serenaSpeakerSprite": "SerenaUpset",
-            "dialogue": "No. I don't know."
+            "dialogue": "No. I don't know, Joan"
         },
         {
             "character": "Serena",
             "serenaSpeakerSprite": "SerenaUpset",
-            "dialogue": "All I knew was how badly you wanted that attention."
+            "dialogue": "All I know is how badly you want that attention."
         },
         {
             "character": "Serena",
@@ -73,7 +78,7 @@
         {
             "character": "Serena",
             "serenaSpeakerSprite": "SerenaUpset",
-            "dialogue": "Don't blame this on just your ego."
+            "dialogue": "Don't go blaming something like this on your ego."
         },
         {
             "character": "Joan",
@@ -83,12 +88,12 @@
         {
             "character": "Joan",
             "joanSpeakerSprite": "JoanUpset",
-            "dialogue": "Serena...you..."
+            "dialogue": "Serena.. you..."
         },
         {
             "character": "Serena",
             "serenaSpeakerSprite": "SerenaUpset",
-            "dialogue": "Cats got your tongue? Or did you just realize everything I said was the truth?"
+            "dialogue": "Cat's got your tongue? Or did you just realize everything I said was the truth?"
         },
         {
             "character": "",

@@ -121,7 +121,6 @@ public class GameProgression : MonoBehaviour
     // Dialogue
     public void ShowDialogue(TextAsset dialogue)
     {
-        print($"hi {DialogueSystemScript} hi");
         DialogueSystemScript.SetVisualNovelJSONFile(dialogue);
         DialogueSystemScript.enabled = true;
         DialogueSystemScript.gameObject.SetActive(true);

@@ -1,0 +1,128 @@
+{
+    "dialogues": [
+        {
+            "character": "",
+            "joanSpeakerSprite": "Transparent",
+            "dialogue": "Awwwww... And Sonatine takes the win per usual! Guess Grand Mal still has a few things to learn, yea?"
+        },
+        {
+            "character": "Serena",
+            "serenaSpeakerSprite": "SerenaNeutral",
+            "dialogue": "The first win is on us. We've only just gotten started. It won't be so easy the second time around."
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanUpset",
+            "dialogue": "On us? Seriously? There's a reason why I'm the main bassist and singer, and you're just a..."
+        },
+        {
+            "character": "Serena",
+            "serenaSpeakerSprite": "SerenaUpset",
+            "dialogue": "A what? Say it, Joan. Say it."
+        },
+        {
+            "character": "Joan",
+            "serenaSpeakerSprite": "JoanUpset",
+            "dialogue": "Ah... Wait- I didn't mean it."
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanUpset",
+            "dialogue": "*Dangit, Joan! You're trying to get her attention, remember? This is your last chance! You can't screw this up!"
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanUpset",
+            "dialogue":"*Seriously... Think before you speak!"
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanUpset",
+            "dialogue": "*Idiot. Idiot, idiot, idiot."
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanUpset",
+            "dialogue": "Sorry... I wasn't thinking straight. You know I have a frail ego, Serena."
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanUpset",
+            "dialogue": "You know how badly I wanted that recognition for us, for Sonatine. How badly, I wanted us to be something..."
+        },
+        {
+            "character": "Serena",
+            "serenaSpeakerSprite": "SerenaUpset",
+            "dialogue": "No. I don't know."
+        },
+        {
+            "character": "Serena",
+            "serenaSpeakerSprite": "SerenaUpset",
+            "dialogue": "All I knew was how badly you wanted that attention."
+        },
+        {
+            "character": "Serena",
+            "serenaSpeakerSprite": "SerenaUpset",
+            "dialogue": "That fame."
+        },
+        {
+            "character": "Serena",
+            "serenaSpeakerSprite": "SerenaUpset",
+            "dialogue": "All for yourself."
+        },
+        {
+            "character": "Serena",
+            "serenaSpeakerSprite": "SerenaUpset",
+            "dialogue": "Don't blame this on just your ego."
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanUpset",
+            "dialogue": "That's not true... I..."
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanUpset",
+            "dialogue": "Serena...you..."
+        },
+        {
+            "character": "Serena",
+            "serenaSpeakerSprite": "SerenaUpset",
+            "dialogue": "Cats got your tongue? Or did you just realize everything I said was the truth?"
+        },
+        {
+            "character": "",
+            "joanSpeakerSprite": "Transparent",
+            "dialogue": "(Joan tries her voice again but was swiftly interrupted by the announcer...)"
+        },
+        {
+            "character": "",
+            "joanSpeakerSprite": "Transparent",
+            "dialogue": "Alright everyone! Who's ready for another round of Revolution Summer?"
+        },
+        {
+            "character": "",
+            "joanSpeakerSprite": "Transparent",
+            "dialogue": "(The basement errupts with screams and cheers.)"
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanNeutral",
+            "dialogue": "Good luck."
+        },
+        {
+            "character": "Serena",
+            "serenaSpeakerSprite": "SerenaNeutral",
+            "dialogue": "Sure."
+        },
+        {
+            "character": "Serena",
+            "serenaSpeakerSprite": "SerenaNeutral",
+            "dialogue": "I'll show you what you're missing out on. Bring it on! Let's see who's in the background now!"
+        },
+        {
+            "hideUI": true,
+            "flag": "Concert"
+        }
+    ]
+}

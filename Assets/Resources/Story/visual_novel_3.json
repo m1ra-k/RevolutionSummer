@@ -1,0 +1,158 @@
+{
+    "dialogues": [
+        {
+            "character": "Serena",
+            "serenaSpeakerSprite": "SerenaNeutral",
+            "dialogue": "..."
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanNeutral",
+            "dialogue": "..."
+        },
+        {
+            "character": "",
+            "joanSpeakerSprite": "Transparent",
+            "dialogue": "And the winner for this year's Summer Revolution is..."
+        },
+        {
+            "character": "Serena",
+            "serenaSpeakerSprite": "SerenaNeutral",
+            "dialogue": "I can't believe I made it this far."
+        },
+        {
+            "character": "Serena",
+            "serenaSpeakerSprite": "SerenaNeutral",
+            "dialogue": "I can't believe Grand Mal made it this far..."
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanNeutral",
+            "dialogue": "..."
+        },
+        {
+            "character": "",
+            "joanSpeakerSprite": "Transparent",
+            "dialogue": "The band that manage to capitivate the majority and rock the judge's off their toes..."
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanNeutral",
+            "dialogue": "Serena?"
+        },
+        {
+            "character": "Serena",
+            "serenaSpeakerSprite": "SerenaNeutral",
+            "dialogue": "Hm?"
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanNeutral",
+            "dialogue": "I feel a little regretful to say this now, but..."
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanHappy",
+            "dialogue": "I'm proud of you."
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanHappy",
+            "dialogue": "You always had a way with words that I nor any other Sonatine will ever have."
+        },
+        {
+            "character": "Serena",
+            "serenaSpeakerSprite": "SerenaNeutral",
+            "dialogue": "..."
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanUpset",
+            "dialogue": "My mother once told me that to be noticed and loved was something only people who had worth in life deserved."
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanUpset",
+            "dialogue": "So I was always so afraid to lose the people that I cared..."
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanNeutral",
+            "dialogue": "My mother. Sonatine."
+        },
+        {
+            "character": "Serena",
+            "serenaSpeakerSprite": "SerenaNeutral",
+            "dialogue": "Joan..."
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanUpset",
+            "dialogue": "And you."
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanNeutral",
+            "dialogue": "So when I saw the potential that you had, I got scared..."
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanNeutral",
+            "dialogue": "I was scared you would leave us for something better or leave Sonatine."
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanUpset",
+            "dialogue": "I was scared to lose you."
+        },
+        {
+            "character": "",
+            "joanSpeakerSprite": "Transparent",
+            "dialogue": "(Joan takes a deep breathe in and laughs nervously, face red and unable to meet Serena's eyes.)"
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanNeutral",
+            "dialogue": "Kind of ironic we ended up here, right?"
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanNeutral",
+            "dialogue": "And I realized, after seeing you on stage..."
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanNeutral",
+            "dialogue": "That to be truly love or notice someone, is to allow them the opportunity to grow, even if it means for them to leave."
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanNeutral",
+            "dialogue": "And for me to be loved and noticed, I can't sequester the love and recognition the people I love deserves."
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanNeutral",
+            "dialogue": "You don't need me to tell you this, but the Grand Mal is yours. But so will Sonatine."
+        },
+        {
+            "character": "Serena",
+            "serenaSpeakerSprite": "SerenaHappy",
+            "dialogue": "Thank you."
+        },
+        {
+            "character": "",
+            "joanSpeakerSprite": "Transparent",
+            "dialogue": "Well, that concludes this season's Revolution Summer competition."
+        },
+        {
+            "character": "",
+            "joanSpeakerSprite": "Transparent",
+            "dialogue": "Thank you to all those who joined. Until next year! Who will be the next revoluntionary rock band then?"
+        },
+        {
+            "hideUI": true,
+            "flag": "EndScreen"
+        }
+    ]
+}

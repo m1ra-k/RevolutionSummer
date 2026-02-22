@@ -1,0 +1,148 @@
+{
+    "dialogues": [
+        {
+            "character": "",
+            "joanSpeakerSprite": "Transparent",
+            "dialogue": "Wow! What an intense battle! And very close, too! Still, another victory closer for the Sonatine."
+        },
+        {
+            "character": "",
+            "joanSpeakerSprite": "Transparent",
+            "dialogue": "Grand Mal is really stepping up their game, but will it be close enough to pull them through the finals against the Sonatine?"
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanHappy",
+            "dialogue": "Only just gotten started, huh?"
+        },
+        {
+            "character": "Serena",
+            "serenaSpeakerSprite": "SerenaUpset",
+            "dialogue": "..."
+        },
+        {
+            "character": "",
+            "joanSpeakerSprite": "Transparent",
+            "dialogue": "(Serena glares hard at Joan, clenching her bass tightly.)"
+        },
+        {
+            "character": "",
+            "joanSpeakerSprite": "Transparent",
+            "dialogue": "(Joan notices and nervously fidgets, filling herself with regrets again.)"
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanNeutral",
+            "dialogue": "Sorry... I was being insensitive again, right?"
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanNeutral",
+            "dialogue": "But... that bass line..."
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanHappy",
+            "dialogue": "It was pretty impressive. Can't believe I overlooked it before. You totally deserve a solo."
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanHappy",
+            "dialogue": "You'll have to show me that some time."
+        },
+        {
+            "character": "Serena",
+            "serenaSpeakerSprite": "SerenaNeutral",
+            "dialogue": "..."
+        },
+        {
+            "character": "Serena",
+            "serenaSpeakerSprite": "SerenaNeutral",
+            "dialogue": "Yeah... Thanks. I can't believe you overlooked it before, too. I bet you can't even remember what you did."
+        },
+        {
+            "character": "",
+            "joanSpeakerSprite": "Transparent",
+            "dialogue": "(Serena laughs bitterly.)"
+        },
+        {
+            "character": "Serena",
+            "serenaSpeakerSprite": "SerenaUpset",
+            "dialogue": "Remember when you called me out in front of the whole band for being 'selfish' and wanting to play something outside your oppressive melody?"
+        },
+        {
+            "character": "Serena",
+            "serenaSpeakerSprite": "SerenaUpset",
+            "dialogue": "You made me sound like I was trying to be different from everyone else, and that my ears were wasted along with my music taste."
+        },
+        {    
+            "character": "Serena",
+            "serenaSpeakerSprite": "SerenaUpset",
+            "dialogue": "You don't know how embarassed I felt that day... It was the first time I ever felt... I guess, resentful of you."
+        },
+        {
+            "character": "Serena",
+            "serenaSpeakerSprite": "SerenaUpset",
+            "dialogue": "I still remembered how much I looked up to you when we first started."
+        },
+        {
+            "character": "Serena",
+            "serenaSpeakerSprite": "SerenaUpset",
+            "dialogue": "You always had a way of gravitating people towards you with your music. Our music."
+        },
+        {
+            "character": "Serena",
+            "serenaSpeakerSprite": "SerenaUpset",
+            "dialogue": "I always envied and admired you for that."
+        },
+        {
+            "character": "",
+            "joanSpeakerSprite": "Transparent",
+            "dialogue": "(Joan awkwardly stares back as Serena tries her hardest to hold back her tears.)"
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanUpset",
+            "dialogue": "You're right."
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanUpset",
+            "dialogue": "I guess I never realized the golden pick that I've lost till I've given it up."
+        },
+        {
+            "character": "Joan",
+            "joanSpeakerSprite": "JoanNeutral",
+            "dialogue": "No one can really hold you back anymore now, can they?"
+        },
+        {
+            "character": "",
+            "joanSpeakerSprite": "Transparent",
+            "dialogue": "(For a moment, Serena smiles.)"
+        },
+        {
+            "character": "",
+            "joanSpeakerSprite": "Transparent",
+            "dialogue": "And now, what you have all been waiting for... the finale of Revolution Summer!"
+        },
+        {
+            "character": "",
+            "joanSpeakerSprite": "Transparent",
+            "dialogue": "Which band will pull the hardest on the strings of our audience and judges?"
+        },
+        {
+            "character": "",
+            "joanSpeakerSprite": "Transparent",
+            "dialogue": "(Joan and Serena both exchange an intense stare without malice, but understanding.)"
+        },
+        {
+            "character": "",
+            "joanSpeakerSprite": "Transparent",
+            "dialogue": "Bands, are you ready?"
+        },
+        {
+            "hideUI": true,
+            "flag": "Concert"
+        }
+    ]
+}

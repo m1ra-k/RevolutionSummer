@@ -77,6 +77,8 @@ public class GameProgression : MonoBehaviour
     {
         GameData.fadeCoroutine = null;
 
+        audioSourceBGM.loop = true;
+
         switch (SceneManager.GetActiveScene().name)
         {
             case "StartScreen":
@@ -86,6 +88,7 @@ public class GameProgression : MonoBehaviour
                 StartCoroutine(PlayBGM(1));
                 break;
             case "Concert":
+                audioSourceBGM.loop = false;
                 switch (GameData.concertNumber)
                 {
                     case 0:

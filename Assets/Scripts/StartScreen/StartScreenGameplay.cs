@@ -2,13 +2,12 @@ using UnityEngine;
 
 public class StartScreenGameplay : MonoBehaviour
 {
-    void Start()
+    public void ExitGame()
     {
+        Application.Quit();
         
-    }
-
-    void Update()
-    {
-        
+        #if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+        #endif
     }
 }

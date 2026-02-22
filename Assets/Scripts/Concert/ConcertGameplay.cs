@@ -224,6 +224,8 @@ public class ConcertGameplay : MonoBehaviour
                 }
                 break;
         }
+        GameData.concertNumber++;
+        GameProgression.GameProgressionInstance.SceneTransition("VisualNovel");
     }
 
     private void DetermineAttackPatternSpawnLocation(string attackPaternName, NoteBehavior noteBehavior)

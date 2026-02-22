@@ -53,12 +53,12 @@
         {
             "character": "Joan",
             "joanSpeakerSprite": "JoanUpset",
-            "dialogue": "How badly, I wanted us to be something..."
+            "dialogue": "How badly I wanted us to be something..."
         },
         {
             "character": "Serena",
             "serenaSpeakerSprite": "SerenaUpset",
-            "dialogue": "No. I don't know, Joan"
+            "dialogue": "No. I don't know, Joan."
         },
         {
             "character": "Serena",

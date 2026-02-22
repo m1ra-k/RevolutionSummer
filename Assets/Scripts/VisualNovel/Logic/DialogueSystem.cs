@@ -20,7 +20,6 @@ public class DialogueSystem : MonoBehaviour
     [SerializeField] private Image bgSpriteImage;
     [SerializeField] private Image joanSpeakerSpriteImage;
     [SerializeField] private Image serenaSpeakerSpriteImage;
-    [SerializeField] private TextMeshProUGUI nameTMP;
     [SerializeField] private TextMeshProUGUI dialogueTMP;
     [SerializeField] private TextMeshProUGUI narrationTMP;
     [SerializeField] private GameObject advanceDialogueButton;
@@ -55,7 +54,6 @@ public class DialogueSystem : MonoBehaviour
         bgSpriteImage = bgSprite?.GetComponent<Image>();
         joanSpeakerSpriteImage = transform.Find("JoanSpeakerSprite")?.GetComponent<Image>();
         serenaSpeakerSpriteImage = transform.Find("SerenaSpeakerSprite")?.GetComponent<Image>();
-        nameTMP = transform.Find("Text/NameText").GetComponent<TextMeshProUGUI>();
         dialogueTMP = transform.Find("Text/DialogueText").GetComponent<TextMeshProUGUI>();
         narrationTMP = transform.parent.transform.Find("NarrationText").GetComponent<TextMeshProUGUI>();
         advanceDialogueButton = transform.parent.transform.Find("AdvanceDialogueButton").gameObject;
@@ -179,14 +177,12 @@ public class DialogueSystem : MonoBehaviour
     public void ShowUI()
     {
         dialogueBoxImage.enabled = true;
-        nameTMP.enabled = true;
         dialogueTMP.enabled = true;
     }
 
     public void HideUI()
     {
         dialogueBoxImage.enabled = false;
-        nameTMP.enabled = false;
         dialogueTMP.enabled = false;
     }
 
@@ -214,8 +210,18 @@ public class DialogueSystem : MonoBehaviour
     {
         dialogueOnDisplay = currentDialogue.dialogue;
 
-        // set character name
-        nameTMP.text = currentDialogue.character;
+        if (currentDialogue.character.Equals("Joan"))
+        {
+            dialogueBoxImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["TextboxJoan"];
+        }
+        else if (currentDialogue.character.Equals("Serena"))
+        {
+            dialogueBoxImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["TextboxSerena"];   
+        }
+        else
+        {
+            dialogueBoxImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites["TextboxNarration"];   
+        }
 
         // set dialogue
         typewriterCoroutine = StartCoroutine(TypewriterEffect(currentDialogue.character, currentDialogue.dialogue));

@@ -4,6 +4,7 @@ using Melanchall.DryWetMidi.Core;
 using Melanchall.DryWetMidi.Interaction;
 using System.IO;
 using System.Collections.Generic;
+using TMPro;
 
 // Concert
 public class ConcertGameplay : MonoBehaviour
@@ -37,12 +38,17 @@ public class ConcertGameplay : MonoBehaviour
         { "s2p5", new int[] { 0, 3, 2, 1 } }
     };
     private int attackPatternsIndex;
+    private Coroutine currentCoroutine;
+    private bool finishedConcert;
+    private bool endScene;
+    private TextMeshProUGUI endSceneText;
 
     void Awake()
     {
         GameData.concertGameplay = this;
 
         canvasTransform = GameObject.Find("Canvas").transform;
+        endSceneText = GameObject.Find("Canvas").transform.Find("EndSceneText").GetComponent<TextMeshProUGUI>();
     }
 
     void Start()
@@ -70,7 +76,26 @@ public class ConcertGameplay : MonoBehaviour
 
         // Debug.Log(sb.ToString());
 
-        StartCoroutine(SpawnNotes());
+        currentCoroutine = StartCoroutine(SpawnNotes());
+    }
+
+    void Update()
+    {
+        if (!endScene)
+        {
+            if (!finishedConcert && healthPoints == 0)
+            {
+                endScene = true;
+                StopCoroutine(currentCoroutine);
+                currentCoroutine = StartCoroutine(EndScene(false));
+            }
+            else if (finishedConcert)
+            {
+                endScene = true;
+                StopCoroutine(currentCoroutine);
+                currentCoroutine = StartCoroutine(EndScene(true));
+            }
+        }
     }
 
     private IEnumerator SpawnNotes()
@@ -224,14 +249,53 @@ public class ConcertGameplay : MonoBehaviour
                 }
                 break;
         }
-        GameData.concertNumber++;
-        GameProgression.GameProgressionInstance.SceneTransition("VisualNovel");
+
+        yield return new WaitForSeconds(3f);
+
+        if (healthPoints > 0) finishedConcert = true;
+    }
+
+    private IEnumerator EndScene(bool success)
+    {
+        endSceneText.text = success
+            ? "SUCCESS!!"
+            : "FAILURE!!";
+
+        float duration = 1.5f;
+        float currentTime = 0f;
+
+        Color originalColor = endSceneText.color;
+        endSceneText.color = new Color(originalColor.r, originalColor.g, originalColor.b, 0f);
+
+        while (currentTime < duration)
+        {
+            currentTime += Time.deltaTime;
+            
+            float alpha = Mathf.Lerp(0f, 1f, currentTime / duration);
+            
+            endSceneText.color = new Color(originalColor.r, originalColor.g, originalColor.b, alpha);
+            
+            yield return null;
+        }
+
+        endSceneText.color = new Color(originalColor.r, originalColor.g, originalColor.b, 1f);
+
+        yield return new WaitForSeconds(1.5f);
+
+        if (success)
+        {
+            GameData.concertNumber++;
+            GameProgression.GameProgressionInstance.SceneTransition("VisualNovel");
+        }
+        else
+        {
+            GameProgression.GameProgressionInstance.SceneTransition("Concert");
+        }
     }
 
     private void DetermineAttackPatternSpawnLocation(string attackPaternName, NoteBehavior noteBehavior)
     {
         print($"{attackPaternName}");
-        // print($"{attackPaternName} {attackPatterns[attackPaternName][attackPatternsIndex]}");
         noteBehavior.overrideSpawnPosition = attackPatterns[attackPaternName][attackPatternsIndex];
         attackPatternsIndex = (attackPatternsIndex < attackPatterns[attackPaternName].Length - 1) 
             ? ++attackPatternsIndex

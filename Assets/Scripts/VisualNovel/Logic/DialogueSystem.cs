@@ -289,13 +289,19 @@ public class DialogueSystem : MonoBehaviour
                 break;
         }
 
-        for (int i = 0; i <= dialogue.Length; i++)
+        bool isItalic = dialogue.StartsWith("*");
+
+        string cleanDialogue = isItalic ? dialogue[1..] : dialogue;
+
+        for (int i = 0; i <= cleanDialogue.Length; i++)
         {
-            tmp.text = dialogue[..i];
+            tmp.text = isItalic 
+                ? $"<i>{cleanDialogue[..i]}</i>" 
+                : cleanDialogue[..i];
 
-            if (!dialogue.Equals("(...)")) voiceAudioSource.PlayOneShot(voiceSample);
+            if (!cleanDialogue.Equals("(...)")) voiceAudioSource.PlayOneShot(voiceSample);
 
-            yield return new WaitForSeconds(textSpeed); // make diff speeds
+            yield return new WaitForSeconds(textSpeed);
         }
 
         typeWriterInEffect = false;

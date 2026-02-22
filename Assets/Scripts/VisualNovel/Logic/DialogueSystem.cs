@@ -66,6 +66,8 @@ public class DialogueSystem : MonoBehaviour
 
         // Audio
         voiceAudioSource = GetComponent<AudioSource>(); 
+
+        gameObject.SetActive(false);
     }
 
     void OnEnable() 
@@ -204,8 +206,15 @@ public class DialogueSystem : MonoBehaviour
     
     public void SetSprite()
     {
-        if (currentDialogue.character.Equals("Joan")) joanSpeakerSpriteImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites[currentDialogue.joanSpeakerSprite];
-        else if (currentDialogue.character.Equals("Serena")) serenaSpeakerSpriteImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites[currentDialogue.serenaSpeakerSprite];
+        if (currentDialogue.character.Equals("Joan")) 
+        {
+            print($"{currentDialogue.joanSpeakerSprite}");
+            joanSpeakerSpriteImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites[currentDialogue.joanSpeakerSprite];
+        }
+        else if (currentDialogue.character.Equals("Serena")) 
+        {
+            serenaSpeakerSpriteImage.sprite = GameProgression.GameProgressionInstance.SpriteCache.sprites[currentDialogue.serenaSpeakerSprite];
+        }
     }
 
     public void SetDialogue() 

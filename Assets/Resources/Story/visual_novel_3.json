@@ -2,6 +2,7 @@
     "dialogues": [
         {
             "character": "Serena",
+            "bgSprite": "ConcertVenue",
             "serenaSpeakerSprite": "SerenaNeutral",
             "dialogue": "..."
         },

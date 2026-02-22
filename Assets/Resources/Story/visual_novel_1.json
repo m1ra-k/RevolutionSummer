@@ -2,6 +2,7 @@
     "dialogues": [
         {
             "character": "",
+            "bgSprite": "ConcertVenue",
             "joanSpeakerSprite": "Transparent",
             "dialogue": "Awwwww... And Sonatine takes the win per usual! Guess Grand Mal still has a few things to learn, yeah?"
         },

@@ -2,6 +2,7 @@
     "dialogues": [
         {
             "character": "",
+            "bgSprite": "ConcertVenue",
             "joanSpeakerSprite": "Transparent",
             "dialogue": "Wow! What an intense battle! And very close, too! Still, another victory closer for the Sonatine."
         },

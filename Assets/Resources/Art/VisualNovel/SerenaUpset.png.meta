@@ -3,8 +3,14 @@ guid: 877d40ab88a97bf4fa95ab7a4fb35cc3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2510364857069513667
-    second: SerenaNeutral_0
+      213: 8969888033381027793
+    second: SerenaUpset_0
+  - first:
+      213: -4580741216264149918
+    second: SerenaUpset_1
+  - first:
+      213: 1742336485415861484
+    second: SerenaUpset_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,12 +119,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SerenaNeutral_0
+      name: SerenaUpset_0
       rect:
         serializedVersion: 2
-        x: 1036
+        x: 1047
         y: 0
-        width: 469
+        width: 503
         height: 967
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -128,8 +134,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3cba04a798b96d220800000000000000
-      internalID: 2510364857069513667
+      spriteID: 1df04b054a17b7c70800000000000000
+      internalID: 8969888033381027793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SerenaUpset_1
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 131
+        width: 6
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 264a5943220fd60c0800000000000000
+      internalID: -4580741216264149918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SerenaUpset_2
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 118
+        width: 6
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cec3a6c5dc50e2810800000000000000
+      internalID: 1742336485415861484
       vertices: []
       indices: 
       edges: []
@@ -148,7 +198,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      SerenaNeutral_0: 2510364857069513667
+      SerenaUpset_0: 8969888033381027793
+      SerenaUpset_1: -4580741216264149918
+      SerenaUpset_2: 1742336485415861484
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

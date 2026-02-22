@@ -3,8 +3,8 @@ guid: 9671312fca8237f4b9e4368a8c9f348f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2807227670898161538
-    second: JoanNeutral_0
+      213: -6567905957660243786
+    second: JoanUpset_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: JoanNeutral_0
+      name: JoanUpset_0
       rect:
         serializedVersion: 2
         x: 43
         y: 0
         width: 843
-        height: 849
+        height: 851
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 287388f71b645f620800000000000000
-      internalID: 2807227670898161538
+      spriteID: 6b84d7b645c1ad4a0800000000000000
+      internalID: -6567905957660243786
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      JoanNeutral_0: 2807227670898161538
+      JoanUpset_0: -6567905957660243786
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

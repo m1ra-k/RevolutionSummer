@@ -45,12 +45,15 @@ public class GuitarHeartBehavior : MonoBehaviour
             {
                 GameObject note = hit.collider.gameObject;
                 float distance = Vector3.Distance(transform.position, note.transform.position);
-                if (GameData.concertGameplay.healthPoints < 350 && distance > 105f && distance < 180f)
+                if (distance > 70f && distance <= 180f)
                 {
                     GameProgression.GameProgressionInstance.PlaySFX(0);
-                    GameData.concertGameplay.healthPoints += 5;
+                    if (GameData.concertGameplay.healthPoints < 700)
+                    {
+                        GameData.concertGameplay.healthPoints += 5;                        
+                    }
                 }
-                else 
+                else
                 {
                     GameProgression.GameProgressionInstance.PlaySFX(1);
                     GameData.concertGameplay.healthPoints -= 5;

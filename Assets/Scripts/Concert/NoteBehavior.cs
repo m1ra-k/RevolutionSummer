@@ -64,7 +64,7 @@ public class NoteBehavior : MonoBehaviour
             hasSpawnedLandingPoint = true;
         }
 
-        if (!reachedTarget && currentDist <= targetRadius - 30)
+        if (!reachedTarget && currentDist <= targetRadius - 60)
         {
             reachedTarget = true;
             OnNoteHitTarget();

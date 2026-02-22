@@ -8,7 +8,7 @@ using System.Collections.Generic;
 // Concert
 public class ConcertGameplay : MonoBehaviour
 {
-    public int healthPoints = 350;
+    public int healthPoints = 700;
     [SerializeField] private GameObject notePrefab;
     private Transform canvasTransform;
     private ICollection<Note> notes;
@@ -16,13 +16,13 @@ public class ConcertGameplay : MonoBehaviour
     private float cumulativeTime;
     private Dictionary<string, int[]> attackPatterns = new()
     {
-        { "square", new int[] { 0, 1, 2, 3 } },
-        { "reverseSquare", new int[] { 3, 2, 1, 0 } },
-        { "cross", new int[] { 0, 2, 1, 3 } },
-        { "doubleDiagonalFromRight", new int[] { 0, 0, 2, 2 } },
-        { "doubleDiagonalFromLeft", new int[] { 1, 1, 3, 3 } },
-        { "upDown", new int[] { 1, 2, 0, 3 } },
-        { "downUp", new int[] { 2, 1, 3, 0 } },
+        { "s0p0", new int[] { 1, 0, 2, 3 } },
+        { "s0p1", new int[] { 0, 1, 2, 3 } },
+        { "s0p2", new int[] { 1, 1, 0, 0, 2, 2, 3, 3 } },
+        { "s0p3", new int[] { 1, 3, 0, 2 } },
+        { "s0p4", new int[] { 1, 1, 0, 2, 2, 3 } },
+        { "s0p5", new int[] { 1, 1, 0, 0 } },
+        { "s0p6", new int[] { 0, 1, 2, 1, 0, 3 } },
         { "s1p0", new int[] { 0, 1, 2, 3 } },
         { "s1p1", new int[] { 0, 2, 1, 3 } },
         { "s1p2", new int[] { 1, 0, 3, 2 } },
@@ -92,43 +92,40 @@ public class ConcertGameplay : MonoBehaviour
 
                     NoteBehavior noteBehavior = note.GetComponent<NoteBehavior>();
 
-                    // phase 2 and 10
-                    if ((cumulativeTime > 20 && cumulativeTime <= 30) || (cumulativeTime > 88 && cumulativeTime <= 98))
+                    // phase 1
+                    if (cumulativeTime <= 20)
                     {
-                        DetermineAttackPatternSpawnLocation("upDown", noteBehavior);
+                        DetermineAttackPatternSpawnLocation("s0p0", noteBehavior);
+                    }
+                    // phase 2, 4, 5, 8
+                    else if ((cumulativeTime > 20 && cumulativeTime <= 40) || (cumulativeTime > 54 && cumulativeTime <= 76) || (cumulativeTime > 76 && cumulativeTime <= 78) || (cumulativeTime > 107 && cumulativeTime <= 116))
+                    {
+                        DetermineAttackPatternSpawnLocation("s0p1", noteBehavior);
                     }
                     // phase 3
-                    else if (cumulativeTime > 30 && cumulativeTime <= 40)
+                    else if (cumulativeTime > 40 && cumulativeTime <= 54)
                     {
-                        DetermineAttackPatternSpawnLocation("square", noteBehavior);
+                        DetermineAttackPatternSpawnLocation("s0p2", noteBehavior);
                     }
-                    // phase 4
-                    else if (cumulativeTime > 40 && cumulativeTime <= 50)
+                    // phase 6
+                    else if (cumulativeTime > 78 && cumulativeTime <= 97)
                     {
-                        DetermineAttackPatternSpawnLocation("downUp", noteBehavior);
-                    }
-                    // phase 5 and 8
-                    else if ((cumulativeTime > 50 && cumulativeTime <= 55) || (cumulativeTime > 78 && cumulativeTime <= 85))
-                    {
-                        DetermineAttackPatternSpawnLocation("cross", noteBehavior);
+                        DetermineAttackPatternSpawnLocation("s0p3", noteBehavior);
                     }
                     // phase 7
-                    else if (cumulativeTime > 40 && cumulativeTime <= 50)
-                    {
-                        DetermineAttackPatternSpawnLocation("doubleDiagonalFromRight", noteBehavior);
-                    }
-                    // phase 11
                     else if (cumulativeTime > 97 && cumulativeTime <= 107)
                     {
-                        DetermineAttackPatternSpawnLocation("doubleDiagonalFromLeft", noteBehavior);
+                        DetermineAttackPatternSpawnLocation("s0p4", noteBehavior);
                     }
-                    // phase 1
-                    // phase 6
                     // phase 9
-                    // phase 12
-                    else
+                    else if (cumulativeTime > 116 && cumulativeTime <= 126)
                     {
-                        print("arbitrary");
+                        DetermineAttackPatternSpawnLocation("s0p5", noteBehavior);
+                    }
+                    // phase 10
+                    else if (cumulativeTime > 126)
+                    {
+                        DetermineAttackPatternSpawnLocation("s0p6", noteBehavior);
                     }
                 }
                 break;
